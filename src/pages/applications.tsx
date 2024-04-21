@@ -40,7 +40,7 @@ const Applications = () => {
                   <div
                     ref={provided.innerRef}
                     {...provided.droppableProps}
-                    className='flex flex-col md:w-[290px] w-[250px] gap-3 items-center py-5'
+                    className='flex flex-col md:w-[260px] w-[250px] gap-4 items-center py-5'
                   >
                     <div className='flex items-center justify-center py-[10px] w-full bg-white rounded-lg shadow-sm text-[#555] font-medium text-[15px]'>
                       {column.name}

@@ -35,8 +35,8 @@ export const Board: Columns = {
 	// 		},
 	// 	],
 	// },
-	pending: {
-		name: "Pending",
+	APPLIED: {
+		name: "APPLIED",
 		items: [
 			{
 				id: uuidv4(),
@@ -64,8 +64,8 @@ export const Board: Columns = {
 			},
 		],
 	},
-	todo: {
-		name: "To Do",
+	SCREEN: {
+		name: "SCREEN",
 		items: [
 			{
 				id: uuidv4(),
@@ -82,8 +82,8 @@ export const Board: Columns = {
 			},
 		],
 	},
-	doing: {
-		name: "Doing",
+	INTERVIEWING: {
+		name: "INTERVIEWING",
 		items: [
 			{
 				id: uuidv4(),
@@ -109,8 +109,8 @@ export const Board: Columns = {
 			},
 		],
 	},
-	done: {
-		name: "Done",
+	REJECTED: {
+		name: "REJECTED",
 		items: [
 			{
 				id: uuidv4(),

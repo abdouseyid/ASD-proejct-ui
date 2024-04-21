@@ -42,7 +42,6 @@ const Sidebar = () => {
 					height="22px"
 				/>
 			),
-			active: false,
 			onClick: () => {
 				navigate("/applications");
 				navLinks.forEach((link) => {
@@ -59,7 +58,6 @@ const Sidebar = () => {
 					height="22px"
 				/>
 			),
-			active: false,
 			onClick: () => {
 				navigate("/notes");
 				navLinks.forEach((link) => {
@@ -76,7 +74,6 @@ const Sidebar = () => {
 					height="22px"
 				/>
 			),
-			active: false,
 			onClick: () => {
 				navigate("/resume");
 				navLinks.forEach((link) => {
@@ -93,7 +90,6 @@ const Sidebar = () => {
 					height="22px"
 				/>
 			),
-			active: false,
 			onClick: () => {
 				window.location.href = "https://www.m-lemine.tech/";
 				navLinks.forEach((link) => {
@@ -110,7 +106,6 @@ const Sidebar = () => {
 					height="22px"
 				/>
 			),
-			active: false,
 			onClick: () => {
 				navigate("/apply");
 				navLinks.forEach((link) => {
@@ -139,13 +134,13 @@ const Sidebar = () => {
 
 	return (
 		<div className="fixed left-0 top-0 md:w-[230px] w-[60px] overflow-hidden h-full flex flex-col">
-			<div className="w-full flex items-center md:justify-start justify-center md:pl-5 h-[70px] bg-[#fff]">
+			<div className="w-full flex items-center md:justify-start justify-center md:pl-5 h-[70px] bg-[#ffffff]">
 			<img
 						src={profileImage}
 						alt="Profile"
 						className="w-10 h-10 rounded-full"
 					/>
-					<span className="text-orange-400 font-semibold md:text-lg text-sm whitespace-nowrap">
+					<span className="text-blue-400 font-semibold md:text-lg text-sm whitespace-nowrap">
 						Job Search
 					</span>
 			</div>
@@ -154,8 +149,8 @@ const Sidebar = () => {
 					return (
 						<div
 							key={link.title}
-							className={`flex items-center gap-2 w-full rounded-lg hover:bg-orange-300 px-2 py-3 cursor-pointer ${
-								link.active ? "bg-orange-300" : "bg-transparent"
+							className={`flex items-center gap-2 w-full rounded-lg hover:bg-blue-300 px-2 py-3 cursor-pointer ${
+								link.active ? "bg-blue-300" : "bg-transparent"
 							}`}
 							onClick={link.onClick}
 						>
