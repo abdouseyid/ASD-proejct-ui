@@ -1,14 +1,11 @@
 
-import React, { useState } from 'react';
-import { Button, Card, Col, Input, Radio, Row, Space, Table, Tag } from 'antd';
+import { Button, Card, Col, Input, Row, Space, Table, Tag } from 'antd';
 import type { TableProps } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { PlusOutlined } from "@ant-design/icons";
 
 
 type ColumnsType<T extends object> = TableProps<T>['columns'];
-type TablePagination<T extends object> = NonNullable<Exclude<TableProps<T>['pagination'], boolean>>;
-type TablePaginationPosition = NonNullable<TablePagination<any>['position']>[number];
 
 interface DataType {
   key: string;
@@ -18,19 +15,7 @@ interface DataType {
   tags: string[];
 }
 
-const topOptions = [
-  { label: 'topLeft', value: 'topLeft' },
-  { label: 'topCenter', value: 'topCenter' },
-  { label: 'topRight', value: 'topRight' },
-  { label: 'none', value: 'none' },
-];
 
-const bottomOptions = [
-  { label: 'bottomLeft', value: 'bottomLeft' },
-  { label: 'bottomCenter', value: 'bottomCenter' },
-  { label: 'bottomRight', value: 'bottomRight' },
-  { label: 'none', value: 'none' },
-];
 
 const columns: ColumnsType<DataType> = [
   {

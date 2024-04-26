@@ -1,5 +1,4 @@
 
-import Applications from './applications';
 
 const Dashboard = () => {
 
