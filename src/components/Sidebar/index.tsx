@@ -49,22 +49,22 @@ const Sidebar = () => {
 				});
 			},
 		},
-		{
-			title: "Notes",
-			icon: (
-				<CalendarOutline
-					color="#555"
-					width="22px"
-					height="22px"
-				/>
-			),
-			onClick: () => {
-				navigate("/notes");
-				navLinks.forEach((link) => {
-					link.active = true;
-				});
-			},
-		},
+		// {
+		// 	title: "Notes",
+		// 	icon: (
+		// 		<CalendarOutline
+		// 			color="#555"
+		// 			width="22px"
+		// 			height="22px"
+		// 		/>
+		// 	),
+		// 	onClick: () => {
+		// 		navigate("/notes");
+		// 		navLinks.forEach((link) => {
+		// 			link.active = true;
+		// 		});
+		// 	},
+		// },
 		{
 			title: "Resume",
 			icon: (

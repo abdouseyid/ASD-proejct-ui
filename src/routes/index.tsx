@@ -1,4 +1,4 @@
-import { RouteObject } from "react-router";
+import { Navigate, RouteObject } from "react-router";
 import Layout from "../layout";
 import Applications from "../pages/applications";
 import Resume from "../pages/Resume";
@@ -9,7 +9,8 @@ import Apply from "../pages/apply";
 
 const routes: RouteObject[] = [
   {
-    path: "/",
+    path: "",
+    
     element: <Layout />,
     children: [
       {
@@ -30,17 +31,21 @@ const routes: RouteObject[] = [
             path: "notes",
             element: <Notes />,
           },
-		  {
+          {
             path: "companies",
             element: <Companies />,
           },
-		  {
+          {
             path: "apply",
             element: <Apply />,
           },
         ],
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/home" />,
   },
 ];
 
