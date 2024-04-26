@@ -161,7 +161,7 @@ const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }: AddModalProps) =>
 					className="w-full mt-3 rounded-md h-9 bg-orange-400 text-blue-50 font-medium"
 					onClick={handleSubmit}
 				>
-					Submit Task
+					Submit 
 				</button>
 			</div>
 		</div>

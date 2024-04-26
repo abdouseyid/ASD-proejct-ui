@@ -6,7 +6,6 @@ import {
 	PeopleOutline,
 	PersonOutline,
 	FlashOutline,
-	CalendarOutline,
 } from "react-ionicons";
 import profileImage from "../../assets/images/logoM.png";
 import { useNavigate } from "react-router-dom";
