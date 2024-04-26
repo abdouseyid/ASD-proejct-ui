@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
+
 import { Columns } from "../types";
 import { getRandomColors } from "../helpers/getRandomColors";
 
@@ -7,26 +7,26 @@ export const Board: Columns = {
 		name: "APPLIED",
 		items: [
 			{
-				id: uuidv4(),
-				title: "Job Application 1",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "1",
+				title: "Java Full Stack Engineer",
+				description: "Full-stack engineer with experience in Java and React",
 				priority: "high",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Frontend", ...getRandomColors() },
 				],
 			},
 			{
-				id: uuidv4(),
-				title: "Job Application 2",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "2",
+				title: "Software Engineer",
+				description: "Experienced software engineer with strong knowledge in JavaScript and Node.js",
 				priority: "low",
 				deadline: 50,
 				alt: "task image",
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Backend", ...getRandomColors() },
 				],
 			},
 		],
@@ -35,14 +35,14 @@ export const Board: Columns = {
 		name: "SCREEN",
 		items: [
 			{
-				id: uuidv4(),
-				title: "Job Application 3",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "3",
+				title: "Java Full Stack Engineer",
+				description: "Full-stack engineer with experience in Java and React",
 				priority: "medium",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Frontend", ...getRandomColors() },
 				],
 			},
 		],
@@ -51,25 +51,25 @@ export const Board: Columns = {
 		name: "INTERVIEWING",
 		items: [
 			{
-				id: uuidv4(),
-				title: "Job Application 4",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "3",
+				title: "Java Full Stack Engineer",
+				description: "Full-stack engineer with experience in Java and React",
 				priority: "low",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Frontend", ...getRandomColors() },
 				],
 			},
 			{
-				id: uuidv4(),
-				title: "Job Application 5",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "4",
+				title: "Software Engineer",
+				description: "Experienced software engineer with strong knowledge in JavaScript and Node.js",
 				priority: "medium",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Backend", ...getRandomColors() },
 				],
 			},
 		],
@@ -78,15 +78,15 @@ export const Board: Columns = {
 		name: "REJECTED",
 		items: [
 			{
-				id: uuidv4(),
-				title: "Job Application 6",
-				description: "Lorem ipsum dolor sit amet ..",
+				id: "5",
+				title: "Software Engineer",
+				description: "Experienced software engineer with strong knowledge in JavaScript and Node.js",
 				priority: "high",
 				deadline: 50,
 				alt: "task image",
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Tech", ...getRandomColors() },
+					{ title: "Backend", ...getRandomColors() },
 				],
 			},
 		],
