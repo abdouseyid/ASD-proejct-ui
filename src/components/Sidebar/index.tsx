@@ -90,7 +90,7 @@ const Sidebar = () => {
 				/>
 			),
 			onClick: () => {
-				window.location.href = "https://www.m-lemine.tech/";
+				window.location.href = "http://abderrahmaneseyid.com/";
 				navLinks.forEach((link) => {
 					link.active = true;
 				});
